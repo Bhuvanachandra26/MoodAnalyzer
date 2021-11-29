@@ -1,4 +1,4 @@
-package com.bridgelabz;
+package com.bridgelabz.moodanalyzer;
 
 public class MoodAnalyzer {
 
@@ -10,7 +10,7 @@ public class MoodAnalyzer {
         this.msg = msg;
     }
 
-    public String analyzeMood() {
+    public String analyzeMood() throws MoodAnalyzeException{
         try {
             if(msg.contains("Sad")){
                 return "Sad";
